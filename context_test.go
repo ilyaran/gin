@@ -18,7 +18,7 @@ import (
 	"time"
 
 	"github.com/gin-contrib/sse"
-	"github.com/gin-gonic/gin/binding"
+	"github.com/ilyaran/gin/binding"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/net/context"
 )

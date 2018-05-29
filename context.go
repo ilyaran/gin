@@ -18,8 +18,9 @@ import (
 	"time"
 
 	"github.com/gin-contrib/sse"
-	"github.com/gin-gonic/gin/binding"
-	"github.com/gin-gonic/gin/render"
+	"github.com/ilyaran/gin/binding"
+	"github.com/ilyaran/gin/render"
+	"github.com/jinzhu/gorm"
 )
 
 // Content-Type MIME of the most common data formats.
@@ -57,6 +58,10 @@ type Context struct {
 
 	// Accepted defines a list of manually accepted formats for content negotiation.
 	Accepted []string
+
+	DB *gorm.DB
+
+	CurrentUser interface{}
 }
 
 /************************************/
